@@ -11,6 +11,7 @@ sudo docker build -t registry.cn-hangzhou.aliyuncs.com/hub/funasr:funasr-runtime
 ```bash
 sudo docker run -p 127.0.0.1:10095:10095 -it --privileged=true --name funasr-server -d --restart=always --log-opt max-size=1g \
   -v $PWD/funasr-runtime-resources/models:/workspace/models \
+  -v $PWD/funasr-runtime-resources/FunASR/runtime/websocket/hotwords.txt:/workspace/FunASR/runtime/websocket/hotwords.txt \
   registry.cn-hangzhou.aliyuncs.com/hub/funasr:funasr-runtime-sdk-online-cpu-0.1.9
 ```
 
