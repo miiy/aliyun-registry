@@ -1,0 +1,1 @@
+FROM gitlab/gitlab-ee:17.7.0-ee.0
