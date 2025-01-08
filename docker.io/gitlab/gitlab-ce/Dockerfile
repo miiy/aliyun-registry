@@ -1,0 +1,1 @@
+FROM gitlab/gitlab-ce:17.7.0-ce.0
